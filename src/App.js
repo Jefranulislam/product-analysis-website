@@ -4,8 +4,11 @@ import Home from './Compnents/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Reviews from './Compnents/Reviews/Reviews';
 import Dashboard from './Compnents/Dashboard/Dashboard';
+import Nopage from './Compnents/Nopage/Nopage';
+import useReview from './hooks/useReview';
 
 function App() {
+  const { reviews, setReviews } = useReview();
   return (
     <div className="">
       <Header></Header>
@@ -15,7 +18,9 @@ function App() {
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='*' element={<Nopage></Nopage>}></Route>
       </Routes>
+
     </div>
   );
 }
