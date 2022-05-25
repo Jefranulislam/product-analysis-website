@@ -24,7 +24,7 @@ const Home = () => {
             <div>
                 <h2 className='text-center text-3xl bold underline'>Review Section
                 </h2>
-                <div className="flex gap-5 justify-center">
+                <div className="flex gap-8 justify-center">
                     {reviews.map(review => <Singlereview key={review.key}
                         review={review}
                     ></Singlereview>)}

@@ -6,6 +6,8 @@ import Reviews from './Compnents/Reviews/Reviews';
 import Dashboard from './Compnents/Dashboard/Dashboard';
 import Nopage from './Compnents/Nopage/Nopage';
 import useReview from './hooks/useReview';
+import Blogs from './Compnents/Blogs/Blogs';
+import About from './Compnents/About/About';
 
 function App() {
   const { reviews, setReviews } = useReview();
@@ -17,7 +19,8 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
         <Route path='*' element={<Nopage></Nopage>}></Route>
       </Routes>
 

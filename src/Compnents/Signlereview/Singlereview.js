@@ -3,9 +3,9 @@ import React from 'react';
 const Singlereview = (props) => {
     const { profile_name, review_text, review_title, review_rating } = props.review;
     return (
-        <div className='w-80'>
+        <div className='w-2/6 items-center flex-row-3'>
             <div className="rounded-lg bg-white shadow-lg px-5 pt-5 pb-10 text-gray-800">
-
+                <img src="" alt="" />
                 <div className="w-full mb-10">
                     <div className="text-4xl text-indigo-500 text-left leading-tight h-3">“</div>
                     <p className="text-2xl text-gray-600 text-center px-5">
